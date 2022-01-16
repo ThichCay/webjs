@@ -1,27 +1,20 @@
 {
-  "name": "webjs",
+  "name": "nextjs",
   "version": "1.0.0",
-  "description": "store web app",
-  "main": "index.js",
+  "private": true,
   "scripts": {
-    "test": "scripts/test.sh"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ThichCay/webjs.git"
+  "dependencies": {
+    "next": "12.0.1",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "keywords": [
-    "thichcay",
-    "firebase",
-    "javascript",
-    "google",
-    "cloud",
-    "auth"
-  ],
-  "author": "ThichCay",
-  "license": "Apache-2.0",
-  "bugs": {
-    "url": "https://github.com/ThichCay/webjs/issues"
-  },
-  "homepage": "https://github.com/ThichCay/webjs#readme"
+  "devDependencies": {
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0"
+  }
 }
